@@ -1,53 +1,46 @@
 #include "main.h"
 
+/**
+ * print_times_table - outputs the value n times table
+ *
+ * @n: number times table (0 < n <= 15)
+ *
+ * Return: no return
+ */
+void print_times_table(int n)
+{
+	int a, b, cd;
 
-	/**
-	 * print_times_table - prints the inter n times table, starting with 0
-	 *
-	 *@n: number of the times table
-	 *
-	 *Return: no return
-	 */
-	void print_times_table(int n)
+	if (n >= 0 && n <= 15)
 	{
-		int a, b, c;
-
-
-		if (n >= 0 && n <= 15)
+		for (a = 0; a <= n; a++)
 		{
-			for (a = 0; a <= n; a++)
+			_putchar(48);
+			for (b = 1; b <= n; b++)
 			{
-				for (b = 0; b <= n; b++)
+				cd = a * b;
+				_putchar(44);
+				_putchar(32);
+				if (cd <= 9)
 				{
-					c = b * a;
-					if (b == 0)
-					{
-						_putchar(c + '0');
-					} else if (c < 10 && b != 0)
-					{
-						_putchar(',');
-						_putchar(' ');
-						_putchar(' ');
-						_putchar(' ');
-						_putchar(c + '0');
-					} else if (c >= 10 && c < 100)
-					{
-						_putchar(',');
-						_putchar(' ');
-						_putchar(' ');
-						_putchar((c / 10) + '0');
-						_putchar((c % 10) + '0');
-					} else if (c >= 100)
-					{
-						_putchar(',');
-						_putchar(' ');
-						_putchar((c / 100) + '0');
-						_putchar(((c / 10) % 10) + '0');
-						_putchar((c % 10) + '0');
-					}
+					_putchar(32);
+					_putchar(32);
+					_putchar(cd + 48);
 				}
-				_putchar('\n');
+				else if (cd <= 99)
+				{
+					_putchar(32);
+					_putchar((cd / 10) + 48);
+					_putchar((cd % 10) + 48);
+				}
+				else
+				{
+					_putchar(((cd / 100) % 10) + 48);
+					_putchar(((cd / 10) % 10) + 48);
+					_putchar((cd % 10) + 48);
+				}
 			}
+			_putchar('\n');
 		}
 	}
-
+}
