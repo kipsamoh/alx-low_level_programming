@@ -1,25 +1,28 @@
 #include "main.h"
 
 /**
- * print_sign - outputs the sign of num
- * @b: interger to determine
- * Return: 1 ouputs + if b is >zero
- * 0 ouputs 0 if b=0
- * -1 ouputs - if b is < zero
+ * print_sign - checks if num is less,equal or greater than 0.
+ *
+ * @n: num to be checked as int
+ *
+ * Return: 1 is when > 0, 0 =0 and -1 is when < 0
  */
-int print_sign(int b)
+int print_sign(int n)
 {
-	if (b > 0)
+	if (n > 0)
 	{
-		_putchar('+');
+		_putchar(43);
 		return (1);
-	} else if (b <0)
-}
-		_putchar('-');
-		return (-1);
-	} else if (b ==0)
-	{
-		_putchar('48');
 	}
+	else if (n < 0)
+	{
+		_putchar(45);
+		return (-1);
+	}
+	else
+	{
+		_putchar(48);
 		return (0);
+	}
+	_putchar('\n');
 }
