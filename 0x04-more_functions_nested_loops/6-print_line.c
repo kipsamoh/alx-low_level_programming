@@ -1,9 +1,9 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * print_line - ouputs straight line
- * @n: number of times n is output.
- * Return: void
+ * print_line - outputs straight line on terminal
+ * @n: times straight line is printed.
+ * Return: empty.
  */
 void print_line(int n)
 {
@@ -11,7 +11,7 @@ void print_line(int n)
 
 	for (a = 0; a < n; a++)
 	{
-		_putchar(92);
+		_putchar(95);
 	}
 	_putchar('\n');
 }
