@@ -1,21 +1,21 @@
 #include "main.h"
 /**
- * string_toupper - converts lowecases to uppercases
- * @n: pointer
- *
- * Return: n
+ * string_toupper - modifies lowercase letters of a string
+ * to uppercase
+ * @s: input string.
+ * Return: dest pointer.
  */
-char *string_toupper(char *n)
+
+char *string_toupper(char *s)
 {
-	int a;
+	int sum = 0;
 
-	a = 0;
-	while (n[a] != '\0')
+	while (*(s + sum) != '\0')
 	{
-		if (n[a] >= 'a' && n[i] <= 'z')
-			n[a] = n[a] - 32;
-		a++;
+		if ((*(s + sum) >= 97) && (*(s + sum) <= 122))
+			*(s + sum) = *(s + sum) - 32;
+		sum++;
 	}
-	return (n);
-}
 
+	return (s);
+}
