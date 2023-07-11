@@ -22,8 +22,8 @@ char *argstostr(int ac, char **av)
 			return (NULL);
 
 		for (c = 0; av[b][c] != '\0'; c++)
-			a++;
-		a++;
+			b++;
+		c++;
 	}
 
 	chararray = malloc((a + 1) * sizeof(char));
