@@ -1,8 +1,13 @@
 #include <stdio.h>
+/**
+ * main - ouputs nums from 00-99
+ *
+ * Return: 0 (successful)
+ */
 
-int main() {
+int main() 
+{
     int i = 0;
-    int m = 0;
 
     while (i < 100) {
         int j = i + 1;
@@ -20,15 +25,10 @@ int main() {
             if (i != 99 || j != 99) {
                 putchar(',');
                 putchar(' ');
-                m = 1;
             }
             j++;
         }
         i++;
-    }
-
-    if (m) {
-        putchar('\n');
     }
 
     return 0;
