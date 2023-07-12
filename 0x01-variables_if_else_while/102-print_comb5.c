@@ -5,36 +5,31 @@
  *
  * Return: 0 (successful)
  */
-int main(void)
+int main()
 {
-int a = 48;
-while (a < 58)
-{
-	int b = a + 1;
-	while (b < 58)
-	{
-		int x1 = a / 10;
-		int x2 = a % 10;
-		int y1 = b / 10;
-		int y2 = b % 10;
-		{
-			putchar(x1);
-			putchar(x2);
-			putchar(' ');
-			putchar(y1);
-			putchar(y2);
-			if (a == 56 && b == 57)
+    int i = 0;
+    while (i < 100) {
+        int j = i + 1;
+        while (j < 100) {
+            int x = i / 10;
+            int y = i % 10;
+            int z = j / 10;
+            int w = j % 10;
+            putchar(x + '0');
+            putchar(y + '0');
+            putchar(' ');
+            putchar(z + '0');
+            putchar(w + '0');
+            if (i != 99 || j != 99) {  
+                putchar(',');
+                putchar(' ');
+            }
 
-			{
-				break;
-			}
-			putchar(',');
-			putchar(' ');
-		}
-	}
-	b++;
+            j++;
+        }
+        i++;
+    }
+
+    return 0;
 }
-a++;
-putchar('\n');
-return (0);
-}
+
