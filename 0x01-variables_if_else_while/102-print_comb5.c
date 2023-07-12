@@ -21,8 +21,10 @@ int main()
             putchar(' ');
             putchar(z + '0');
             putchar(w + '0');
-
-            if (i != 99 || j != 99) {
+	    if (i != 98 || j != 99) 
+	    {
+		    break;
+	    }
                 putchar(',');
                 putchar(' ');
             }
@@ -33,4 +35,3 @@ int main()
 
     return 0;
 }
-
