@@ -4,7 +4,7 @@
  * @nmemb: elements number in an
  * @size: size of elements in bytes
  *
- * Return:allocated memory pointer 
+ * Return: allocated memory pointer.
  * when nmemb and size is 0, returns NULL.
  * when allocation fails, returns NULL.
  */
@@ -16,7 +16,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	p = malloc(nmemb * size);
+	ptr = malloc(nmemb * size);
 
 	if (ptr == NULL)
 		return (NULL);
