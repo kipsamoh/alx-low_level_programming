@@ -93,7 +93,7 @@ int main(int argc, char *argv[])
 		if (z)
 			_putchar(result[x] + '0');
 	}
-	if (!a)
+	if (!z)
 		_putchar('0');
 	_putchar('\n');
 	free(result);
