@@ -52,10 +52,10 @@ int main(int argc, char *argv[])
 	while (numchars == 1024)
 	{
 		numchars = read(file_from, buffer, 1024);
-		if (nchars == -1)
+		if (numchars == -1)
 			error_file(-1, 0, argv);
 		writtenfile = write(file_to, buffer, numchars);
-		if (written == -1)
+		if (writtenfile == -1)
 			error_file(0, -1, argv);
 	}
 
