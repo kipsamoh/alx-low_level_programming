@@ -2,13 +2,13 @@
 #include <math.h>
 
 /**
- * jump_list - searches for a value in an array of
- * integers using the Jump search algorithm
+ * jump_list - searches for a value in an ar_ray of
+ * integers using the Ju_mp search alg_orithm
  *
  * @list: input list
  * @size: size of the array
- * @value: value to search in
- * Return: index of the number
+ * @value: value to sea_rch in
+ * Return: index of the nu_mber
  */
 listint_t *jump_list(listint_t *list, size_t size, int value)
 {
