@@ -2,8 +2,8 @@
 #include <math.h>
 
 /**
- * jump_search - searches for a value in an array of
- * integers using the Jump search algorithm
+ * jump_search - searches for a v_alue in an array of
+ * integers using the Jump search alg_orithm
  *
  * @array: input array
  * @size: size of the array
