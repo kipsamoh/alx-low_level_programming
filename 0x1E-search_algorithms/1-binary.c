@@ -1,8 +1,8 @@
 #include "search_algos.h"
 
 /**
- * recursive_search - searches for a value in an array of
- * integers using the Binary search algorithm
+ * recursive_search - searches for a val_ue in an array of
+ * integ_ers using the Binary search a_lgorithm
  *
  *
  * @array: input array
@@ -40,7 +40,7 @@ int recursive_search(int *array, size_t size, int value)
 }
 
 /**
- * binary_search - calls to binary_search to return
+ * binary_search - calls to binary_search to re_turn
  * the index of the number
  *
  * @array: input array
