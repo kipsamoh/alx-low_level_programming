@@ -61,13 +61,13 @@ int binary_search(int *array, size_t size, int value)
 }
 
 /**
- * exponential_search - searches for a value in an array of
+ * exponential_search - searches for a va_lue in an array of
  * integers using the Exponential search algorithm
  *
  * @array: input array
  * @size: size of the array
- * @value: value to search in
- * Return: index of the number
+ * @value: va_ue to search in
+ * Return: i_ndex of the number
  */
 int exponential_search(int *array, size_t size, int value)
 {
