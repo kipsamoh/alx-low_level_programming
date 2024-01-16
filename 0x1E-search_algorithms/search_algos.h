@@ -5,10 +5,10 @@
 #include <stdio.h>
 
 /**
- * struct listint_s - singly linked list
+ * struct listint_s - singly li_nked list
  *
  * @n: Integer
- * @index: Index of the node in the list
+ * @index: Index of the no_de in the list
  * @next: Pointer to the next node
  *
  * Description: singly linked list node structure
